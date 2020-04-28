@@ -3,7 +3,7 @@ SMSDK = ../sourcemod
 #
 # navfile_blocker.ext.so
 #
-INCLUDE = -I. -I$(SMSDK)/public -I$(SMSDK)/public/amtl -I$(SMSDK)/sourcepawn/include
+INCLUDE = -I. -I$(SMSDK)/public -I$(SMSDK)/public/amtl -I$(SMSDK)/public/amtl/amtl -I$(SMSDK)/sourcepawn/include
 CFLAGS  = -DPOSIX -Dstricmp=strcasecmp -D_stricmp=strcasecmp -D_strnicmp=strncasecmp -Dstrnicmp=strncasecmp \
 	-D_snprintf=snprintf -D_vsnprintf=vsnprintf -D_alloca=alloca -Dstrcmpi=strcasecmp -DCOMPILER_GCC \
 	-Wno-switch -Wall -Werror -mfpmath=sse -msse -DSOURCEMOD_BUILD -DHAVE_STDINT_H -m32
